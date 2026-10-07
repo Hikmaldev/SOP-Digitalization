@@ -1,0 +1,23 @@
+{
+  "projectId": "c52c2a07-68ce-40b0-a660-7fe1a164e9a3",
+  "type": "frontend",
+  "name": "Version history shows the audit trail",
+  "planSteps": [
+    {
+      "type": "action",
+      "description": "Sign in as alex.rivera@soply.test with password Soply123! (fill the Email and Password fields on /login and click 'Sign in')"
+    },
+    {
+      "type": "action",
+      "description": "Click 'Version history' in the sidebar"
+    },
+    {
+      "type": "assertion",
+      "description": "The page shows the heading 'Version history' with columns Version, SOP, Change summary, Changed by, Date, and Status"
+    },
+    {
+      "type": "assertion",
+      "description": "The audit table lists at least one version row for a published Finance SOP (e.g. 'Leave request' or 'Purchase order approval')"
+    }
+  ]
+}

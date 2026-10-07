@@ -1,0 +1,27 @@
+{
+  "projectId": "c52c2a07-68ce-40b0-a660-7fe1a164e9a3",
+  "type": "frontend",
+  "name": "Admin can manage people and roles",
+  "planSteps": [
+    {
+      "type": "action",
+      "description": "Sign in as admin@soply.test with password Soply123! (fill the Email and Password fields on /login and click 'Sign in')"
+    },
+    {
+      "type": "action",
+      "description": "Click 'People & roles' in the Manage section of the sidebar"
+    },
+    {
+      "type": "assertion",
+      "description": "The page shows the heading 'People & roles' and a summary line with the total number of people"
+    },
+    {
+      "type": "assertion",
+      "description": "The user table lists 'Alex Rivera' (SOP author) and 'Monica Chen' (Approver) with their emails"
+    },
+    {
+      "type": "assertion",
+      "description": "Each row has a Role dropdown and a Department dropdown, and a Save button that is disabled while there are no changes"
+    }
+  ]
+}

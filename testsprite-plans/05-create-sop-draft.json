@@ -1,0 +1,36 @@
+{
+  "projectId": "c52c2a07-68ce-40b0-a660-7fe1a164e9a3",
+  "type": "frontend",
+  "name": "Author can create a new SOP draft",
+  "planSteps": [
+    {
+      "type": "action",
+      "description": "Sign in as alex.rivera@soply.test with password Soply123! (fill the Email and Password fields on /login and click 'Sign in')"
+    },
+    {
+      "type": "action",
+      "description": "Click the 'Create new SOP' button on the overview page"
+    },
+    {
+      "type": "assertion",
+      "description": "The draft editor loads with the heading 'Document a process'"
+    },
+    {
+      "type": "action",
+      "description": "Fill the SOP title field (input#sop-title) with 'TestSprite draft - ATS onboarding'"
+    },
+    {
+      "type": "action",
+      "description": "Select 'Finance' in the Department dropdown (select#sop-department)"
+    },
+    {
+      "type": "action",
+      "description": "Fill the Body content textarea (textarea#sop-body) with 'Purpose\nStandardize new hire onboarding in the recruiting team.\n\nSteps\n1. Create the employee record.\n2. Assign the ATS workflow.'"
+    },
+    { "type": "action", "description": "Click the 'Save as draft' button" },
+    {
+      "type": "assertion",
+      "description": "A 'Saved ✓' banner appears with the text 'Your changes are stored on the server'"
+    }
+  ]
+}

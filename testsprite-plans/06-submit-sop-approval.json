@@ -1,0 +1,35 @@
+{
+  "projectId": "c52c2a07-68ce-40b0-a660-7fe1a164e9a3",
+  "type": "frontend",
+  "name": "Author can submit a new SOP for approval",
+  "planSteps": [
+    {
+      "type": "action",
+      "description": "Sign in as alex.rivera@soply.test with password Soply123! (fill the Email and Password fields on /login and click 'Sign in')"
+    },
+    {
+      "type": "action",
+      "description": "Click the 'Create new SOP' button on the overview page"
+    },
+    {
+      "type": "action",
+      "description": "Fill the SOP title field (input#sop-title) with 'TestSprite submit - vendor payment flow'"
+    },
+    {
+      "type": "action",
+      "description": "Select 'Finance' in the Department dropdown (select#sop-department)"
+    },
+    {
+      "type": "action",
+      "description": "Fill the Body content textarea (textarea#sop-body) with 'Purpose\nPay approved vendor invoices on time.\n\nSteps\n1. Match the invoice to the purchase order.\n2. Get the finance lead's sign-off.\n3. Schedule the payment.'"
+    },
+    {
+      "type": "action",
+      "description": "Click the 'Submit for approval' button in the 'Ready to submit?' sidebar card"
+    },
+    {
+      "type": "assertion",
+      "description": "The SOP detail page opens showing the title 'TestSprite submit - vendor payment flow' with a 'Pending review' version badge"
+    }
+  ]
+}

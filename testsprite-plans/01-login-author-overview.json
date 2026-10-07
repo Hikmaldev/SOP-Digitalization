@@ -1,0 +1,20 @@
+{
+  "projectId": "c52c2a07-68ce-40b0-a660-7fe1a164e9a3",
+  "type": "frontend",
+  "name": "Author can sign in and see the workspace overview",
+  "planSteps": [
+    { "type": "action", "description": "Navigate to /login" },
+    {
+      "type": "action",
+      "description": "Sign in as alex.rivera@soply.test with password Soply123!: clear the Email field (input#login-email) and type alex.rivera@soply.test, clear the Password field (input#login-password) and type Soply123!, then click the 'Sign in' button"
+    },
+    {
+      "type": "assertion",
+      "description": "The workspace overview loads with the heading 'Good to see you, Alex' and a metric card labeled 'Published SOPs'"
+    },
+    {
+      "type": "assertion",
+      "description": "The sidebar shows the nav items Overview, SOP library, Approval queue, and Version history"
+    }
+  ]
+}

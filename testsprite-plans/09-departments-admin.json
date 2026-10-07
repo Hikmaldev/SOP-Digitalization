@@ -1,0 +1,31 @@
+{
+  "projectId": "c52c2a07-68ce-40b0-a660-7fe1a164e9a3",
+  "type": "frontend",
+  "name": "Admin sees the department directory",
+  "planSteps": [
+    {
+      "type": "action",
+      "description": "Sign in as admin@soply.test with password Soply123! (fill the Email and Password fields on /login and click 'Sign in')"
+    },
+    {
+      "type": "action",
+      "description": "Click 'Departments' in the Manage section of the sidebar"
+    },
+    {
+      "type": "assertion",
+      "description": "The page shows the heading 'Departments' and a note that departments are maintained at company level ('Departments are reference data maintained at company level')"
+    },
+    {
+      "type": "assertion",
+      "description": "Department cards are shown for Finance (with '4 members' and '6 published SOPs'), IT Operations, and People & Culture"
+    },
+    {
+      "type": "action",
+      "description": "Click the 'Browse SOPs' link on the Finance card"
+    },
+    {
+      "type": "assertion",
+      "description": "The SOP library opens filtered to the Finance department and shows published SOPs including 'Expense reimbursement'"
+    }
+  ]
+}

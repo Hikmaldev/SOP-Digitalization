@@ -1,0 +1,25 @@
+{
+  "projectId": "c52c2a07-68ce-40b0-a660-7fe1a164e9a3",
+  "type": "frontend",
+  "name": "Author can search the library and open a published SOP",
+  "planSteps": [
+    {
+      "type": "action",
+      "description": "Sign in as alex.rivera@soply.test with password Soply123! (fill the Email and Password fields on /login and click 'Sign in')"
+    },
+    { "type": "action", "description": "Click 'SOP library' in the sidebar" },
+    {
+      "type": "action",
+      "description": "Type 'Leave request' into the search input (input with aria-label 'Search keyword') and wait for the results to update"
+    },
+    {
+      "type": "assertion",
+      "description": "The results list contains a result titled 'Leave request' showing its department"
+    },
+    { "type": "action", "description": "Click the 'Leave request' result" },
+    {
+      "type": "assertion",
+      "description": "The SOP detail page opens with the heading 'Leave request', a version badge (e.g. 'Published · v2.2'), and a 'Version history' link"
+    }
+  ]
+}

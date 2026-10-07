@@ -1,0 +1,21 @@
+{
+  "projectId": "c52c2a07-68ce-40b0-a660-7fe1a164e9a3",
+  "type": "frontend",
+  "name": "Process flow diagram renders with connected arrows",
+  "planSteps": [
+    {
+      "type": "action",
+      "description": "Sign in as alex.rivera@soply.test with password Soply123! (fill the Email and Password fields on /login and click 'Sign in')"
+    },
+    { "type": "action", "description": "Navigate to /search and search for 'Purchase order approval'" },
+    { "type": "action", "description": "Click the 'Purchase order approval' search result to open the SOP detail page" },
+    {
+      "type": "assertion",
+      "description": "The 'Process diagram' card shows the diagram with visible node labels such as 'Start' and 'End', and connector arrows (SVG path lines with arrowheads) linking the nodes together without gaps"
+    },
+    {
+      "type": "assertion",
+      "description": "The diagram caption reads 'Simple process diagram ·' followed by the number of shapes"
+    }
+  ]
+}

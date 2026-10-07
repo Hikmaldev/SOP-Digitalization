@@ -1,0 +1,28 @@
+{
+  "projectId": "c52c2a07-68ce-40b0-a660-7fe1a164e9a3",
+  "type": "frontend",
+  "name": "Approver sees the approval queue with recent decisions",
+  "planSteps": [
+    {
+      "type": "action",
+      "description": "Sign in as monica.chen@soply.test with password Soply123! (fill the Email and Password fields on /login and click 'Sign in')"
+    },
+    {
+      "type": "action",
+      "description": "Click 'Approval queue' in the sidebar"
+    },
+    {
+      "type": "assertion",
+      "description": "The page shows the heading 'Approval queue' with the tabs 'Needs my review' and 'Recently decided'"
+    },
+    {
+      "type": "assertion",
+      "description": "The 'Needs my review' tab shows a count badge and lists pending Finance drafts such as 'Expense reimbursement' v2 submitted by Jordan Miller"
+    },
+    { "type": "action", "description": "Click the 'Recently decided' tab" },
+    {
+      "type": "assertion",
+      "description": "The 'Recently decided' list shows decided draft cards with titles such as 'Expense reimbursement', each showing an Approved or Rejected badge and the approver's name (e.g. 'by Monica Chen')"
+    }
+  ]
+}
