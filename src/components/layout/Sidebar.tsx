@@ -1,8 +1,6 @@
 import { NavLink } from 'react-router';
 import { useAuth } from '../../context/auth-context';
 import { useWorkspace } from '../../context/workspace-context';
-import { initialsOf, ROLE_LABEL } from '../../lib/display';
-import { Avatar } from '../Avatar';
 import { Icon } from '../Icon';
 import type { IconName } from '../Icon';
 
@@ -30,7 +28,7 @@ function navClassName({ isActive }: { isActive: boolean }): string {
 }
 
 export function Sidebar() {
-  const { user, logout } = useAuth();
+  const { user } = useAuth();
   const { approvals } = useWorkspace();
   const pendingCount = approvals.length;
 
@@ -83,16 +81,6 @@ export function Sidebar() {
             <span>Read the quick guide</span>
           </div>
           <span className="arrow">↗</span>
-        </div>
-        <div className="profile">
-          <Avatar initials={initialsOf(user.fullName)} color="navy" />
-          <div className="profile-copy">
-            <strong>{user.fullName}</strong>
-            <span>{ROLE_LABEL[user.role]}</span>
-          </div>
-          <button className="logout-button" type="button" onClick={logout} title="Sign out">
-            Sign out
-          </button>
         </div>
       </div>
     </aside>
