@@ -39,11 +39,14 @@ export function Sidebar() {
   return (
     <aside className="sidebar">
       <div className="brand">
-        <div className="brand-mark" aria-hidden="true">
-          <span />
-          <span />
-          <span />
-        </div>
+        <img
+          className="brand-mark"
+          src="/brand-mark.svg"
+          alt=""
+          width="30"
+          height="30"
+          aria-hidden="true"
+        />
         <div>
           <strong>SOPly</strong>
           <small>Process library</small>

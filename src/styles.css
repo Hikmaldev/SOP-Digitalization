@@ -25,9 +25,7 @@ button { border: 0; cursor: pointer; }
 .app-shell { display: flex; min-height: 100vh; }
 .sidebar { width: 248px; min-width: 248px; display: flex; flex-direction: column; padding: 27px 16px 20px; background: #fff; border-right: 1px solid var(--line); }
 .brand { display: flex; gap: 11px; align-items: center; padding: 0 17px 42px; }
-.brand-mark { width: 30px; height: 30px; display: flex; align-items: end; gap: 3px; padding: 5px 6px; border-radius: 9px; background: var(--navy); }
-.brand-mark span { display: block; width: 4px; border-radius: 4px 4px 1px 1px; background: #8ee0c8; }
-.brand-mark span:nth-child(1) { height: 8px; opacity: .65; }.brand-mark span:nth-child(2) { height: 14px; }.brand-mark span:nth-child(3) { height: 20px; opacity: .8; }
+.brand-mark { width: 30px; height: 30px; display: block; border-radius: 9px; }
 .brand strong { display: block; font: 800 18px 'Manrope', sans-serif; letter-spacing: -.6px; }.brand small { display: block; margin-top: 1px; color: #a1acbd; font-size: 10px; }
 .nav-label { margin: 0 17px 12px; color: #a7b0bf; font-size: 10px; font-weight: 700; letter-spacing: .11em; text-transform: uppercase; }.nav-label-spaced { margin-top: 37px; }
 .main-nav { flex: 1; }.nav-item { min-height: 43px; display: flex; align-items: center; gap: 13px; margin: 2px 0; padding: 0 16px; border-radius: 9px; color: #7c8ba1; font-size: 13px; font-weight: 600; transition: .2s ease; }.nav-item:hover { color: var(--navy); background: #f7f9fb; }.nav-item.active { color: var(--navy); background: #edf8f5; }.nav-item svg { width: 17px; height: 17px; fill: currentColor; }.nav-count { margin-left: auto; min-width: 22px; padding: 3px 6px; border-radius: 8px; color: #7790a8; background: #f0f3f7; font-size: 10px; text-align: center; }.nav-count.alert { color: #d48720; background: #fff1d9; }
